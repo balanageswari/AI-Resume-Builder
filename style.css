@@ -1,0 +1,128 @@
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f4f6f9;
+}
+
+/* Layout */
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:20px auto;
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+}
+
+/* Form Section */
+.form-section{
+  width:40%;
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  max-height:90vh;
+  overflow-y:auto;
+}
+
+/* Preview Section */
+.preview-section{
+  width:60%;
+}
+
+/* Inputs */
+input, textarea{
+  width:100%;
+  margin-bottom:10px;
+  padding:8px;
+  border-radius:5px;
+  border:1px solid #ccc;
+  font-size:14px;
+}
+
+textarea{
+  resize:none;
+  height:60px;
+}
+
+/* Buttons */
+button{
+  width:100%;
+  padding:10px;
+  background:blue;
+  color:white;
+  border:none;
+  border-radius:6px;
+  font-weight:bold;
+  cursor:pointer;
+  margin-bottom:8px;
+  transition:0.3s;
+}
+
+button:hover{
+  background:blue;
+}
+
+/* Resume Design */
+#resume{
+  background:white;
+  padding:30px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  min-height:297mm;       /* A4 height */
+  width:210mm;            /* A4 width */
+  margin:auto;
+}
+
+/* Header */
+.header{
+  text-align:center;
+  border-bottom:2px solid grey;
+  padding-bottom:10px;
+}
+
+.header img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:10px;
+}
+
+/* Sections */
+.section{
+  margin-top:15px;
+}
+
+.section h3{
+  background:grey;
+  color:white;
+  padding:5px;
+  font-size:16px;
+  margin-bottom:5px;
+}
+
+.section p{
+  font-size:14px;
+  margin:5px 0;
+}
+
+ul{
+  margin:5px 0 5px 20px;
+  font-size:14px;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .container{
+    flex-direction:column;
+  }
+
+  .form-section,
+  .preview-section{
+    width:100%;
+  }
+
+  #resume{
+    width:100%;
+  }
+}
